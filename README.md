@@ -1,55 +1,136 @@
-# MedHub Mobile <img src="https://github.com/Abdalrahman-Alhamod/MedHub-Mobile/assets/137921143/876bc8c2-67c2-4c5d-b358-dcefc2446872" alt="logo" width="45" height="45" />
+# 🏥 Eczanem - Pharmacy Management Mobile App
 
-> ![٢٠٢٤٠١١٨_٢٠٤٦١٧](https://github.com/Abdalrahman-Alhamod/MedHub-Mobile/assets/137921143/72074dac-ca33-427f-831c-57df2c2c70e6)
+A comprehensive Flutter-based pharmacy management application with AI-powered medical assistant. 
 
-> ![٢٠٢٤٠١١٩_٠١٥٧٥٦](https://github.com/Abdalrahman-Alhamod/MedHub-Mobile/assets/137921143/6dadf499-0791-4d70-86e4-5e7f33892149)
+## ✨ Features
 
-Welcome to the MedHub Mobile app repository! MedHub is a Flutter-based mobile application designed to streamline pharmaceutical management, ensuring efficient communication between pharmacists and warehouse owners. 💊📲
+- 🛒 **Product Management** - Browse and manage pharmacy inventory
+- 🤖 **AI Medical Assistant** - Powered by Google Gemini AI
+- 👤 **User Authentication** - Secure login and registration
+- 🏪 **Pharmacy Operations** - Complete pharmacy workflow management
+- 📊 **Dashboard Analytics** - Real-time insights and reports
+- 🔍 **Smart Search** - Find medicines quickly
+- 🛍️ **Shopping Cart** - Seamless ordering experience
 
-## Features
+## 🛠️ Tech Stack
 
-- **Intuitive Interface**: User-friendly design for both pharmacists and warehouse managers. 🌐
-- **Secure Authentication**: Easy registration via mobile number and secure login/logout features. 🔐
-- **Efficient Medicine Management**: Request, add, track, and manage medicines with detailed information. 💊
-- **Browsing and Ordering**: Seamless browsing, filtering, and ordering of available medicines. 📦
-- **Notifications and Alerts**: Instant updates on order status, low stock, or expired medicines. 🚨
-- **Favorites and Search**: Create favorite lists and utilize advanced search functionality. ❤️🔍
-- **Multi-Language Support**: Choose between Arabic and English languages for a personalized experience. 🌐🗣️
-- **Sales and Order Tracking**: Warehouse owners can manage orders and track sales history. 💼📊
+- **Frontend:** Flutter (Dart)
+- **Backend:** Laravel (PHP)
+- **Database:** MySQL
+- **AI:** Google Gemini API
+- **State Management:** Provider/Bloc
+- **Architecture:** Clean Architecture
 
-## Technical Specifications
+## 📋 Prerequisites
 
-- **Frontend**: Developed using Flutter for a cross-platform mobile experience. 📱💻
-- **Backend**: Powered by Laravel for robust and scalable performance. ⚙️🚀
-- **API Integration**: Implementation of RESTful APIs for seamless communication. 🔄📡
+- Flutter SDK (3.0+)
+- Dart SDK
+- Android Studio / VS Code
+- XAMPP (for local backend)
+- Git
 
-## Getting Started
+## 🚀 Getting Started
 
-1. **Clone the Repository**:
+### 1. Clone the Repository
 
-    ```bash
-    git clone https://github.com/your-username/medhub-mobile.git
-    ```
+```bash
+git clone https://github.com/OsamaNgr/eczanem-mobile.git
+cd eczanem-mobile
+```
 
-2. **Navigate to the Project Directory**:
+### 2. Install Dependencies
 
-    ```bash
-    cd medhub-mobile
-    ```
+```bash
+flutter pub get
+```
 
-3. **Run the App Locally**:
+### 3. Configure Environment
 
-    - Make sure you have Flutter and Dart installed.
-    - Connect a device or use an emulator.
+Create a `.env` file in the project root:
 
-    ```bash
-    flutter run
-    ```
+```env
+API_BASE_URL=http://10.0.2.2/Eczanem-Backend
+GEMINI_API_KEY=your-gemini-api-key-here
+```
 
-4. **Contributing**:
+**Get your Gemini API key:** https://aistudio.google.com/app/apikey
 
-    - We welcome contributions! Feel free to open issues or submit pull requests. 🤝
+### 4. Setup Backend
 
-5. **License**:
+1. Clone backend repository:
+   ```bash
+   git clone https://github.com/OsamaNgr/eczanem-backend.git
+   ```
 
-    - This project is licensed under the [MIT License](LICENSE). 📜
+2. Move to XAMPP htdocs:
+   ```
+   C:\xampp\htdocs\Eczanem-Backend\
+   ```
+
+3. Start XAMPP (Apache + MySQL)
+
+4. Create database `eczanem` in phpMyAdmin
+
+5. Run migrations from backend
+
+### 5. Run the App
+
+```bash
+flutter run
+```
+
+## 📱 Supported Platforms
+
+- ✅ Android
+- ✅ iOS
+- 🚧 Web (Coming soon)
+
+## 🏗️ Project Structure
+
+```
+lib/
+├── core/           # Core utilities and constants
+├── features/       # Feature modules
+│   ├── auth/      # Authentication
+│   ├── home/      # Home dashboard
+│   ├── products/  # Product management
+│   └── ai/        # AI assistant
+├── shared/        # Shared widgets and components
+└── main.dart      # App entry point
+```
+
+## 🔗 Related Repositories
+
+- **Backend API:** [eczanem-backend](https://github.com/OsamaNgr/eczanem-backend)
+
+## 🔐 Security
+
+- Environment variables for sensitive data
+- Secure API communication
+- Token-based authentication
+- Input validation and sanitization
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Team
+
+- **Developer:** OsamaNgr
+- **Project:** Eczanem Pharmacy Management System
+
+## 📞 Support
+
+For support, email sppml5@hotmail.com or open an issue in the repository. 
+
+---
+
+**Made with ❤️ for better pharmacy management**

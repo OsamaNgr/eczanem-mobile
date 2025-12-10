@@ -1,0 +1,83 @@
+name: pharmacy_warehouse_store_mobile
+description:  "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter: 
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  
+  # State Management
+  flutter_bloc: ^8.1.4
+  get:  ^4.6.6
+  
+  # UI
+  flutter_screenutil: ^5.9.0
+  bottom_navy_bar: ^6.0.0
+  flutter_svg: ^2.0.10+1
+  auto_size_text: ^3.0.0
+  month_year_picker: ^0.5.0+1
+  lottie: ^3.1.0
+  fl_chart: ^1.1.1
+  
+  # Network
+  dio: ^5.4.1
+  
+  # Utilities
+  logger: ^2.1.0
+  flutter_dotenv: ^5.1.0
+  intl: ^0.20.2
+  url_launcher: ^6.3.2
+  
+  # Local Storage
+  shared_preferences: ^2.2.2
+  
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_messaging: ^14.7.9
+  firebase_auth: ^4.16.0
+  
+  # Social Login
+  google_sign_in:  ^6.2.1
+  sign_in_with_apple:  ^6.1.2
+  
+  # Image Picker
+  image_picker: ^1.0.7
+
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+fflutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/vectors/
+    - assets/animations/
+    - assets/products/
+    - assets/SVGs/
+    - .env
+
+  # Fonts commented out - files don't exist yet
+  # fonts:
+  #   - family: Overpass
+  #     fonts:
+  #       - asset: assets/fonts/Overpass-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/Overpass-Regular.ttf
+  #         weight: 400
+  #       - asset: assets/fonts/Overpass-SemiBold.ttf
+  #         weight: 600

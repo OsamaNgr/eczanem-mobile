@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "554164234468",
+    "project_id": "medhub-24193",
+    "storage_bucket": "medhub-24193.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554164234468:android:484edb2ff1c773945564f1",
+        "android_client_info": {
+          "package_name": "com.example.pharmacy_warehouse_store_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWfF6t8J-Bq4me1OAoJ8pCBRkBBl-6IAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

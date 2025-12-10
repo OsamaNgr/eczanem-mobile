@@ -1,10 +1,10 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/core/assets/app_images.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/order.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/screens/order_details_screen.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/widgets/show_image.dart';
+import 'package:eczanem_mobile/core/assets/app_images.dart';
+import 'package:eczanem_mobile/src/model/order.dart';
+import 'package:eczanem_mobile/src/view/screens/order_details_screen.dart';
+import 'package:eczanem_mobile/src/view/widgets/show_image.dart';
 
 class OrderCard extends StatelessWidget {
   const OrderCard({super.key, required this.order});

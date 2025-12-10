@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/locale/local_controller.dart';
+import 'package:eczanem_mobile/src/locale/local_controller.dart';
 
 void showSelectLangDialog() {
   Get.dialog(

@@ -4,24 +4,24 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:logger/logger.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/AI/ai_assistant_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Auth/Login/login_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Auth/Logout/logout_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Auth/Register/register_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Auth/SocialLogin/social_login_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/BottomNavBar/bottom_nav_bar_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Cart/cart_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Category/category_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Favourite/favourite_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Home/home_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Orders/orders_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Products/products_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Report/report_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Statistics/statistics_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Theme/theme_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/User/user_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/locale/locale.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/screens/start/splash_screen.dart';
+import 'package:eczanem_mobile/src/Cubits/AI/ai_assistant_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Auth/Login/login_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Auth/Logout/logout_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Auth/Register/register_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Auth/SocialLogin/social_login_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/BottomNavBar/bottom_nav_bar_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Cart/cart_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Category/category_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Favourite/favourite_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Home/home_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Orders/orders_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Products/products_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Report/report_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Statistics/statistics_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Theme/theme_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/User/user_cubit.dart';
+import 'package:eczanem_mobile/src/locale/locale.dart';
+import 'package:eczanem_mobile/src/view/screens/navigation_bar/home_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
@@ -78,7 +78,7 @@ class MyApp extends StatelessWidget {
               final theme = isDark ? _darkTheme : _lightTheme;
               
               return GetMaterialApp(
-                title: 'MedHub',
+                title: 'Eczanem',
                 debugShowCheckedModeBanner: false,
                 theme:  theme,
                 translations: LocaleController(),
@@ -90,29 +90,51 @@ class MyApp extends StatelessWidget {
           ),
         );
       },
-      child: const SplashScreen(),
+      child: const HomeScreen(),
     );
   }
 }
 
-// Light Theme
+// Light Theme - Turkish Pharmacy Red & White
 final ThemeData _lightTheme = ThemeData(
-  brightness:  Brightness.light,
-  primarySwatch: Colors.blue,
+  brightness: Brightness.light,
+  primarySwatch: Colors.red,
+  primaryColor: const Color(0xFFDC143C), // Turkish pharmacy red
   scaffoldBackgroundColor: Colors.white,
   appBarTheme: const AppBarTheme(
-    backgroundColor: Colors. blue,
+    backgroundColor: Color(0xFFDC143C), // Red app bar
     foregroundColor: Colors.white,
+    elevation: 2,
+  ),
+  colorScheme: const ColorScheme. light(
+    primary: Color(0xFFDC143C),
+    secondary: Color(0xFFE31837),
+    surface: Colors.white,
+    error: Colors.red,
+  ),
+  floatingActionButtonTheme: const FloatingActionButtonThemeData(
+    backgroundColor: Color(0xFFDC143C),
   ),
 );
 
-// Dark Theme
+// Dark Theme - Turkish Pharmacy Dark Mode
 final ThemeData _darkTheme = ThemeData(
   brightness: Brightness.dark,
-  primarySwatch: Colors.blue,
-  scaffoldBackgroundColor: Colors.grey[900],
-  appBarTheme: AppBarTheme(
-    backgroundColor:  Colors.grey[850],
+  primarySwatch: Colors.red,
+  primaryColor: const Color(0xFFDC143C),
+  scaffoldBackgroundColor:  const Color(0xFF1A1A1A),
+  appBarTheme: const AppBarTheme(
+    backgroundColor: Color(0xFF2C2C2C),
     foregroundColor: Colors.white,
+    elevation: 2,
+  ),
+  colorScheme: const ColorScheme.dark(
+    primary: Color(0xFFDC143C),
+    secondary: Color(0xFFE31837),
+    surface: Color(0xFF2C2C2C),
+    error: Colors.red,
+  ),
+  floatingActionButtonTheme: const FloatingActionButtonThemeData(
+    backgroundColor: Color(0xFFDC143C),
   ),
 );

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pharmacy_warehouse_store_mobile/core/assets/app_images.dart';
-import 'package:pharmacy_warehouse_store_mobile/core/constants/app_colors.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Products/products_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/product.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/helpers/show_snack_bar.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/widgets/product_card.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/widgets/show_image.dart';
+import 'package:eczanem_mobile/core/assets/app_images.dart';
+import 'package:eczanem_mobile/core/constants/app_colors.dart';
+import 'package:eczanem_mobile/src/Cubits/Products/products_cubit.dart';
+import 'package:eczanem_mobile/src/model/product.dart';
+import 'package:eczanem_mobile/src/view/helpers/show_snack_bar.dart';
+import 'package:eczanem_mobile/src/view/widgets/product_card.dart';
+import 'package:eczanem_mobile/src/view/widgets/show_image.dart';
 
 class FavouriteScreen extends StatelessWidget {
   const FavouriteScreen({super.key});

@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/main.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/order_product.dart';
+import 'package:eczanem_mobile/main.dart';
+import 'package:eczanem_mobile/src/model/order_product.dart';
 
 class OrderStatus {
   OrderStatus();

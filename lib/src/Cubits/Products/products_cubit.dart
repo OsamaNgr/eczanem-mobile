@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
-import 'package:pharmacy_warehouse_store_mobile/main.dart';
+import 'package:eczanem_mobile/main.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/category.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/product.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/user.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/services/api.dart';
+import 'package:eczanem_mobile/src/model/category.dart';
+import 'package:eczanem_mobile/src/model/product.dart';
+import 'package:eczanem_mobile/src/model/user.dart';
+import 'package:eczanem_mobile/src/services/api.dart';
 part 'products_state.dart';
 
 class SearchConstraints {

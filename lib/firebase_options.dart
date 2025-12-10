@@ -47,25 +47,25 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyBqfTNc7X_NSIjFpnRsjEi5G8IYX-AZmTs',
     appId: '1:895894180005:web:1b78e2ab49793ad2cf7d4c',
     messagingSenderId: '895894180005',
-    projectId: 'medhub-d9cfb',
-    authDomain: 'medhub-d9cfb.firebaseapp.com',
-    storageBucket: 'medhub-d9cfb.appspot.com',
+    projectId: 'Eczanem-d9cfb',
+    authDomain: 'Eczanem-d9cfb.firebaseapp.com',
+    storageBucket: 'Eczanem-d9cfb.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAWfF6t8J-Bq4me1OAoJ8pCBRkBBl-6IAY',
     appId: '1:554164234468:android:484edb2ff1c773945564f1',
     messagingSenderId: '554164234468',
-    projectId: 'medhub-24193',
-    storageBucket: 'medhub-24193.firebasestorage.app',
+    projectId: 'Eczanem-24193',
+    storageBucket: 'Eczanem-24193.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDpO_Hct5BBRXHZ9_DBXiIx_57H4mtyu1w',
     appId: '1:554164234468:ios:35d2a65bdf2eaa555564f1',
     messagingSenderId: '554164234468',
-    projectId: 'medhub-24193',
-    storageBucket: 'medhub-24193.firebasestorage.app',
+    projectId: 'Eczanem-24193',
+    storageBucket: 'Eczanem-24193.firebasestorage.app',
     iosBundleId: 'com.example.pharmacyWarehouseStoreMobile',
   );
 
@@ -73,8 +73,8 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyDNIW5pXfdHyKnoNZulkybxiNzTCglrrg4',
     appId: '1:895894180005:ios:d3ba26cc195f21edcf7d4c',
     messagingSenderId: '895894180005',
-    projectId: 'medhub-d9cfb',
-    storageBucket: 'medhub-d9cfb.appspot.com',
+    projectId: 'Eczanem-d9cfb',
+    storageBucket: 'Eczanem-d9cfb.appspot.com',
     iosBundleId: 'com.example.pharmacyWarehouseStoreMobile.RunnerTests',
   );
 }

@@ -1,6 +1,6 @@
 {
-    "name": "pharmacy_warehouse_store_mobile",
-    "short_name": "pharmacy_warehouse_store_mobile",
+    "name": "eczanem_mobile",
+    "short_name": "eczanem_mobile",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

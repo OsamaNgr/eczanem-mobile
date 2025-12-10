@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "pharmacy_warehouse_store_mobile" "\0"
+            VALUE "FileDescription", "eczanem_mobile" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "pharmacy_warehouse_store_mobile" "\0"
+            VALUE "InternalName", "eczanem_mobile" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "pharmacy_warehouse_store_mobile.exe" "\0"
-            VALUE "ProductName", "pharmacy_warehouse_store_mobile" "\0"
+            VALUE "OriginalFilename", "eczanem_mobile.exe" "\0"
+            VALUE "ProductName", "eczanem_mobile" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

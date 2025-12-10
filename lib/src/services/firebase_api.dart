@@ -2,10 +2,10 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/main.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/BottomNavBar/bottom_nav_bar_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/user.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/helpers/show_snack_bar.dart';
+import 'package:eczanem_mobile/main.dart';
+import 'package:eczanem_mobile/src/Cubits/BottomNavBar/bottom_nav_bar_cubit.dart';
+import 'package:eczanem_mobile/src/model/user.dart';
+import 'package:eczanem_mobile/src/view/helpers/show_snack_bar.dart';
 
 class FirebaseApi {
   final _firebaseMessaging = FirebaseMessaging.instance;

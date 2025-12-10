@@ -1,4 +1,4 @@
-import 'package:pharmacy_warehouse_store_mobile/src/model/product.dart';
+import 'package:eczanem_mobile/src/model/product.dart';
 
 class OrderProduct {
   Product product;

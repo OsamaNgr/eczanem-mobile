@@ -3,13 +3,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/core/constants/app_colors.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Auth/Register/register_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Auth/SocialLogin/social_login_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/helpers/show_loading_dialog.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/helpers/show_snack_bar.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/screens/auth/login_screen.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/screens/navigation%20bar/home_screen.dart';
+import 'package:eczanem_mobile/core/constants/app_colors.dart';
+import 'package:eczanem_mobile/src/Cubits/Auth/Register/register_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Auth/SocialLogin/social_login_cubit.dart';
+import 'package:eczanem_mobile/src/view/helpers/show_loading_dialog.dart';
+import 'package:eczanem_mobile/src/view/helpers/show_snack_bar.dart';
+import 'package:eczanem_mobile/src/view/screens/auth/login_screen.dart';
+import 'package:eczanem_mobile/src/view/screens/navigation_bar/home_screen.dart';
 import 'dart:io' show Platform;
 
 class RegisterScreen extends StatefulWidget {
@@ -157,7 +157,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "MedHub",
+                      "Eczanem",
                       style:  TextStyle(
                         fontSize: 28.sp,
                         fontWeight: FontWeight.bold,

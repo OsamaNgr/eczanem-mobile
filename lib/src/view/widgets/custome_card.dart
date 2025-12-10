@@ -2,7 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/core/constants/app_colors.dart';
+import 'package:eczanem_mobile/core/constants/app_colors.dart';
 
 class CustomeCard extends StatelessWidget {
   final String title;

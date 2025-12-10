@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart' as get_lib;
 import 'package:dio/dio.dart';
-import 'package:pharmacy_warehouse_store_mobile/main.dart';
-import 'package:pharmacy_warehouse_store_mobile/main.dart';
+import 'package:eczanem_mobile/main.dart';
+import 'package:eczanem_mobile/main.dart';
 
 class MethodType {
   const MethodType._();
@@ -15,7 +15,7 @@ class MethodType {
 
 class Api {
   const Api._();
-  static const String baseUrl = 'http://192.168.1.16/MedHub-Backend/public/api/';
+  static const String baseUrl = 'http://192.168.1.16/Eczanem-Backend/public/api/';
 
   static Future<dynamic> request(
       {required String url,

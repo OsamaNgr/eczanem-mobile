@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/core/assets/app_products_images.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/category.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/product.dart';
+import 'package:eczanem_mobile/core/assets/app_products_images.dart';
+import 'package:eczanem_mobile/src/model/category.dart';
+import 'package:eczanem_mobile/src/model/product.dart';
 
 class Products {
   static final _date = DateTime.now().toString();

@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:pharmacy_warehouse_store_mobile/main.dart';
+import 'package:eczanem_mobile/main.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:url_launcher/url_launcher.dart';
 

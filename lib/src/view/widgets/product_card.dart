@@ -1,8 +1,9 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/product.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/screens/product_details_screen.dart';
+import 'package:eczanem_mobile/core/constants/app_colors.dart';
+import 'package:eczanem_mobile/src/model/product.dart';
+import 'package:eczanem_mobile/src/view/screens/product_details_screen.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({super.key, required this.product});
@@ -16,80 +17,112 @@ class ProductCard extends StatelessWidget {
       onTap: () {
         Get.off(() => ProductDetailsScreen(), arguments: product);
       },
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Container(
-            height: 180,
-            width: 180,
-            decoration: BoxDecoration(
-              borderRadius: const BorderRadius.only(
-                  topRight: Radius.circular(8), topLeft: Radius.circular(8)),
-              color: Colors.grey.shade300,
-              image: DecorationImage(
-                image: NetworkImage(
-                  product.image,
+      child: Container(
+        width: 180,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(16),
+          boxShadow:  [
+            BoxShadow(
+              color: Colors.black. withOpacity(0.08),
+              blurRadius: 12,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Product Image
+            Container(
+              height: 140,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: const BorderRadius.only(
+                  topRight: Radius.circular(16),
+                  topLeft: Radius.circular(16),
                 ),
-                fit: BoxFit.fill,
+                color: Colors.grey.shade100,
+              ),
+              child:  ClipRRect(
+                borderRadius: const BorderRadius.only(
+                  topRight: Radius.circular(16),
+                  topLeft: Radius.circular(16),
+                ),
+                child: Image.network(
+                  product. image,
+                  fit: BoxFit.cover,
+                  errorBuilder: (context, error, stackTrace) {
+                    return const Icon(
+                      Icons.medical_services,
+                      size:  60,
+                      color: AppColors.primaryColor,
+                    );
+                  },
+                ),
               ),
             ),
-          ),
-          Container(
-            height: 70,
-            width: 180,
-            decoration: BoxDecoration(
-              borderRadius: const BorderRadius.only(
-                  bottomRight: Radius.circular(8),
-                  bottomLeft: Radius.circular(8)),
-              color: theme.primaryColor,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Column(
+            
+            // Product Info
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SizedBox(
-                      width: 90,
-                      child: AutoSizeText(
-                        product.name,
-                        style: theme.textTheme.bodyLarge!.copyWith(
-                          color: Colors.white,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                        maxLines: 1,
-                        minFontSize: 6,
+                    // Product Name
+                    AutoSizeText(
+                      product.name,
+                      style: theme.textTheme.bodyLarge! .copyWith(
+                        color: AppColors.textColor,
+                        fontWeight: FontWeight. bold,
+                        overflow: TextOverflow.ellipsis,
                       ),
+                      maxLines: 1,
+                      minFontSize: 12,
                     ),
-                    SizedBox(
-                      width: 90,
+                    const SizedBox(height: 4),
+                    
+                    // Scientific Name
+                    AutoSizeText(
+                      product.scientificName,
+                      style: theme.textTheme. bodySmall!.copyWith(
+                        color: AppColors. secondaryTextColor,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      maxLines: 1,
+                      minFontSize: 10,
+                    ),
+                    
+                    const SizedBox(height: 8),
+                    
+                    // Price Badge
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 6,
+                      ),
+                      decoration: BoxDecoration(
+                        color: AppColors.primaryColor,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                       child: AutoSizeText(
-                        product.scientificName,
+                        "${product.price} ${"SP".tr}",
                         style: theme.textTheme.bodyMedium!.copyWith(
                           color: Colors.white,
-                          overflow: TextOverflow.ellipsis,
+                          fontWeight: FontWeight.bold,
                         ),
+                        minFontSize: 10,
                         maxLines: 1,
-                        minFontSize: 6,
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
-                  width: 70,
-                  child: AutoSizeText(
-                    "${product.price.toString()} ${"SP".tr}",
-                    style: theme.textTheme.bodyMedium!.copyWith(
-                        color: const Color.fromARGB(255, 181, 255, 183)),
-                    minFontSize: 8,
-                    maxLines: 1,
-                  ),
-                ),
-              ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

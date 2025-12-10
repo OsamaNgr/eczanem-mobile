@@ -23,7 +23,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "com.example.pharmacy_warehouse_store_mobile"
+    namespace "com.example.eczanem_mobile"
     compileSdk 36
 
     compileOptions {
@@ -45,7 +45,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.pharmacy_warehouse_store_mobile"
+        applicationId "com.example.eczanem_mobile"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion 36
         versionCode flutterVersionCode.toInteger()

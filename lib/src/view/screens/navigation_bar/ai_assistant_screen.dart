@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:pharmacy_warehouse_store_mobile/core/constants/app_colors.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/AI/ai_assistant_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/chat_message.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/helpers/show_snack_bar.dart';
+import 'package:eczanem_mobile/core/constants/app_colors.dart';
+import 'package:eczanem_mobile/src/Cubits/AI/ai_assistant_cubit.dart';
+import 'package:eczanem_mobile/src/model/chat_message.dart';
+import 'package:eczanem_mobile/src/view/helpers/show_snack_bar.dart';
 import 'dart:io';
 
 class AIAssistantScreen extends StatefulWidget {

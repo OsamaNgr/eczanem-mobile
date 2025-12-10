@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
-import 'package:pharmacy_warehouse_store_mobile/main.dart';
+import 'package:eczanem_mobile/main.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pharmacy_warehouse_store_mobile/main.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/statistics_data.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/user.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/services/api.dart';
+import 'package:eczanem_mobile/main.dart';
+import 'package:eczanem_mobile/src/model/statistics_data.dart';
+import 'package:eczanem_mobile/src/model/user.dart';
+import 'package:eczanem_mobile/src/services/api.dart';
 
 part 'statistics_state.dart';
 

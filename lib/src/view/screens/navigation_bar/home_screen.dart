@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/core/constants/app_colors.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/BottomNavBar/bottom_nav_bar_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/screens/drawer/profile_screen.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/screens/navigation bar/orders_screen.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/screens/navigation bar/products_list_screen.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/screens/navigation bar/search_screen.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/screens/navigation bar/ai_assistant_screen.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/screens/navigation bar/cart_orders_screen.dart';
+import 'package:eczanem_mobile/core/constants/app_colors.dart';
+import 'package:eczanem_mobile/src/Cubits/BottomNavBar/bottom_nav_bar_cubit.dart';
+import 'package:eczanem_mobile/src/view/screens/drawer/profile_screen.dart';
+import 'package:eczanem_mobile/src/view/screens/navigation_bar/orders_screen.dart';
+import 'package:eczanem_mobile/src/view/screens/navigation_bar/products_list_screen.dart';
+import 'package:eczanem_mobile/src/view/screens/navigation_bar/search_screen.dart';
+import 'package:eczanem_mobile/src/view/screens/navigation_bar/ai_assistant_screen.dart';
+import 'package:eczanem_mobile/src/view/screens/navigation_bar/cart_orders_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super. key});
@@ -17,7 +17,7 @@ class HomeScreen extends StatefulWidget {
   static const List<Widget> screen = [
     ProductsListScreen(), // Index 0 - Home
     SearchScreen(),       // Index 1 - Search
-    AIAssistantScreen(),  // Index 2 - AI Assistant (NEW!)
+    AIAssistantScreen(),  // Index 2 - AI Assistant
     OrdersScreen(),       // Index 3 - Orders
     ProfileScreen(),      // Index 4 - Profile
   ];
@@ -35,15 +35,15 @@ class HomeScreenState extends State<HomeScreen> {
           appBar: const _HomeAppBar(),
           body: SizedBox. expand(
             child: HomeScreen
-                .screen[BlocProvider. of<BottomNavBarCubit>(context).index],
+                .screen[BlocProvider.of<BottomNavBarCubit>(context).index],
           ),
           bottomNavigationBar: BottomNavyBar(
-            backgroundColor: Colors.white,
+            backgroundColor: AppColors.primaryColor, // RED background
             selectedIndex: BlocProvider.of<BottomNavBarCubit>(context).index,
             containerHeight: 70,
             onItemSelected: (index) {
-              BlocProvider. of<BottomNavBarCubit>(context)
-                  .navigate(index: index);
+              BlocProvider.of<BottomNavBarCubit>(context)
+                  .navigate(index:  index);
             },
             items: <BottomNavyBarItem>[
               BottomNavyBarItem(
@@ -52,8 +52,8 @@ class HomeScreenState extends State<HomeScreen> {
                   Icons.home,
                   size: 32,
                 ),
-                activeColor: AppColors.primaryColor,
-                inactiveColor: Colors. grey,
+                activeColor: Colors.white, // WHITE when selected
+                inactiveColor: const Color(0xFFFFB3B3), // Light pink when not selected
               ),
               BottomNavyBarItem(
                 title: Text("search".tr),
@@ -61,8 +61,8 @@ class HomeScreenState extends State<HomeScreen> {
                   Icons.search,
                   size: 32,
                 ),
-                activeColor: AppColors.primaryColor,
-                inactiveColor: Colors.grey,
+                activeColor: Colors. white,
+                inactiveColor: const Color(0xFFFFB3B3),
               ),
               BottomNavyBarItem(
                 title: Text("aiAssistant".tr),
@@ -70,26 +70,26 @@ class HomeScreenState extends State<HomeScreen> {
                   Icons. chat_bubble_outline,
                   size: 32,
                 ),
-                activeColor: AppColors.primaryColor,
-                inactiveColor: Colors.grey,
+                activeColor: Colors.white,
+                inactiveColor: const Color(0xFFFFB3B3),
               ),
               BottomNavyBarItem(
-                title: Text("orders".tr),
+                title: Text("orders". tr),
                 icon: const Icon(
-                  Icons. receipt,
+                  Icons.receipt,
                   size: 32,
                 ),
-                activeColor: AppColors.primaryColor,
-                inactiveColor: Colors.grey,
+                activeColor:  Colors.white,
+                inactiveColor: const Color(0xFFFFB3B3),
               ),
               BottomNavyBarItem(
-                title: Text("profile". tr),
+                title:  Text("profile".tr),
                 icon: const Icon(
                   Icons.person,
                   size: 32,
                 ),
-                activeColor: AppColors.primaryColor,
-                inactiveColor: Colors.grey,
+                activeColor: Colors.white,
+                inactiveColor: const Color(0xFFFFB3B3),
               ),
             ],
           ),
@@ -108,11 +108,11 @@ class _HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.primaryColor, // RED background
       title: const Text(
-        'MedHub',
+        'Eczanem',
         style: TextStyle(
-          color: AppColors. primaryColor,
+          color: Colors. white, // WHITE text
           fontWeight: FontWeight.bold,
           fontSize: 24,
         ),
@@ -120,12 +120,12 @@ class _HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         IconButton(
           onPressed: () async {
-            Get. to(() => const CartOrdersScreen());
+            Get.to(() => const CartOrdersScreen());
           },
           icon: const Icon(
-            Icons.shopping_cart,
-            size: 40,
-            color: AppColors.primaryColor,
+            Icons. shopping_cart,
+            size:  40,
+            color: Colors.white, // WHITE cart icon
           ),
         ),
       ],

@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/user.dart' as app_user;
+import 'package:eczanem_mobile/src/model/user.dart' as app_user;
 
 part 'logout_state.dart';
 

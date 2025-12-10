@@ -1,5 +1,5 @@
-name: pharmacy_warehouse_store_mobile
-description:  "A new Flutter project."
+name: eczanem_mobile
+description:  "Eczanem - Modern pharmacy management system"
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -8,14 +8,14 @@ environment:
   sdk: '>=3.3.4 <4.0.0'
 
 dependencies:
-  flutter: 
+  flutter:  
     sdk: flutter
 
   cupertino_icons: ^1.0.6
   
   # State Management
   flutter_bloc: ^8.1.4
-  get:  ^4.6.6
+  get: ^4.6.6
   
   # UI
   flutter_screenutil: ^5.9.0
@@ -44,8 +44,8 @@ dependencies:
   firebase_auth: ^4.16.0
   
   # Social Login
-  google_sign_in:  ^6.2.1
-  sign_in_with_apple:  ^6.1.2
+  google_sign_in: ^6.2.1
+  sign_in_with_apple: ^6.1.2
   
   # Image Picker
   image_picker: ^1.0.7
@@ -58,8 +58,10 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.10
 
-fflutter:
+flutter: 
   uses-material-design: true
 
   assets:
@@ -72,12 +74,34 @@ fflutter:
     - .env
 
   # Fonts commented out - files don't exist yet
-  # fonts:
-  #   - family: Overpass
-  #     fonts:
+  # fonts: 
+  #   - family:  Overpass
+  #     fonts: 
   #       - asset: assets/fonts/Overpass-Bold.ttf
   #         weight: 700
   #       - asset: assets/fonts/Overpass-Regular.ttf
   #         weight: 400
   #       - asset: assets/fonts/Overpass-SemiBold.ttf
   #         weight: 600
+
+# Flutter Launcher Icons Configuration
+flutter_launcher_icons: 
+  android: true
+  ios:  true
+  image_path: "assets/icons/app_icon. png"
+  adaptive_icon_background: "#DC143C"  # Turkish pharmacy red
+  adaptive_icon_foreground: "assets/icons/app_icon_foreground.png"
+  remove_alpha_ios: true
+
+# Flutter Native Splash Screen Configuration
+flutter_native_splash: 
+  color: "#DC143C"  # Red background
+  image: "assets/icons/splash_icon.png"  # Splash logo
+  android:  true
+  ios: true
+  web: false
+  
+  android_12:
+    color: "#DC143C"
+    image:  "assets/icons/splash_icon.png"
+    icon_background_color: "#DC143C"

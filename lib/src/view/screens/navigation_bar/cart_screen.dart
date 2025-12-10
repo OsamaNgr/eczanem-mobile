@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/core/assets/app_images.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Cart/cart_cubit.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/product.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/helpers/show_custome_dialog.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/helpers/show_loading_dialog.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/helpers/show_snack_bar.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/widgets/custome_button.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/widgets/product_list_tile.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/widgets/show_image.dart';
+import 'package:eczanem_mobile/core/assets/app_images.dart';
+import 'package:eczanem_mobile/src/Cubits/Cart/cart_cubit.dart';
+import 'package:eczanem_mobile/src/model/product.dart';
+import 'package:eczanem_mobile/src/view/helpers/show_custome_dialog.dart';
+import 'package:eczanem_mobile/src/view/helpers/show_loading_dialog.dart';
+import 'package:eczanem_mobile/src/view/helpers/show_snack_bar.dart';
+import 'package:eczanem_mobile/src/view/widgets/custome_button.dart';
+import 'package:eczanem_mobile/src/view/widgets/product_list_tile.dart';
+import 'package:eczanem_mobile/src/view/widgets/show_image.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});

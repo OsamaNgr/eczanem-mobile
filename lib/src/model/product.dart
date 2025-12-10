@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/category.dart';
+import 'package:eczanem_mobile/src/model/category.dart';
 
 abstract class ProductType {
   const ProductType._();

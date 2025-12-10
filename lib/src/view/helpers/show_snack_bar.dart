@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/core/constants/app_colors.dart';
+import 'package:eczanem_mobile/core/constants/app_colors.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
 enum SnackBarMessageType { error, info, success, notification }

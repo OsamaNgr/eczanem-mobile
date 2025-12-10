@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:dio/dio.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/user.dart' as app_user;
-import 'package:pharmacy_warehouse_store_mobile/src/services/api.dart';
+import 'package:eczanem_mobile/src/model/user.dart' as app_user;
+import 'package:eczanem_mobile/src/services/api.dart';
 
 part 'login_state.dart';
 

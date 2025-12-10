@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/chat_message.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/services/github_models_service.dart';
+import 'package:eczanem_mobile/src/model/chat_message.dart';
+import 'package:eczanem_mobile/src/services/github_models_service.dart';
 
 part 'ai_assistant_state.dart';
 

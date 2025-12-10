@@ -11,9 +11,9 @@
 	<key>BUNDLE_ID</key>
 	<string>com.example.pharmacyWarehouseStoreMobile</string>
 	<key>PROJECT_ID</key>
-	<string>medhub-d9cfb</string>
+	<string>Eczanem-d9cfb</string>
 	<key>STORAGE_BUCKET</key>
-	<string>medhub-d9cfb.appspot.com</string>
+	<string>Eczanem-d9cfb.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>

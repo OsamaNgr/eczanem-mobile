@@ -2,9 +2,9 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/Cubits/Statistics/statistics_cubit.dart';
+import 'package:eczanem_mobile/src/Cubits/Statistics/statistics_cubit.dart';
 import 'package:month_year_picker/month_year_picker.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/screens/navigation%20bar/report_view.dart';
+import 'package:eczanem_mobile/src/view/screens/navigation_bar/report_view.dart';
 
 import '../../../../core/assets/app_images.dart';
 import '../../../../core/constants/app_colors.dart';

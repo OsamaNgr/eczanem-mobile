@@ -1,10 +1,10 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pharmacy_warehouse_store_mobile/core/constants/app_colors.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/model/product.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/screens/product_details_screen.dart';
-import 'package:pharmacy_warehouse_store_mobile/src/view/widgets/cart_quantity_counter.dart';
+import 'package:eczanem_mobile/core/constants/app_colors.dart';
+import 'package:eczanem_mobile/src/model/product.dart';
+import 'package:eczanem_mobile/src/view/screens/product_details_screen.dart';
+import 'package:eczanem_mobile/src/view/widgets/cart_quantity_counter.dart';
 
 class ProductListTile extends StatelessWidget {
   const ProductListTile(
